@@ -16,6 +16,7 @@ p {
 }
 
 .hero__text {
+  color: #4f4f4f;
   @include font(
     $size: 0.75rem,
     $height: 0.9375rem,
@@ -26,6 +27,11 @@ p {
 
 .text_highlighted {
   @include font($size: 0.875rem, $height: inherit, $weight: 700);
+}
+
+.text-emphasized {
+  letter-spacing: 0em;
+  @include font($size: 14px, $height: 25px, $weight: 500, $style: italic);
 }
 
 .info__servings__title {
@@ -48,6 +54,7 @@ p {
 }
 
 .dish__ingredient {
+  font-family: Montserrat;
   @include font($size: 0.875rem, $height: 1.5625rem, $weight: 400);
 }
 
