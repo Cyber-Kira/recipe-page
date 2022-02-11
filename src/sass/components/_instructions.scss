@@ -1,0 +1,39 @@
+.instructions {
+  list-style: none;
+  counter-reset: my-awesome-counter 0;
+  &__title {
+    font-family: "Playfair Display";
+    padding: 0 0 26px;
+    @include font($size: 24px, $height: 32px, $weight: 700);
+  }
+}
+
+.instruction {
+  position: relative;
+  counter-increment: my-awesome-counter;
+  padding-left: 51px;
+  &:not(:last-child) {
+    padding-bottom: 9px;
+  }
+  &::before {
+    --size: 36px;
+    position: absolute;
+    inset: 0;
+    width: var(--size);
+    height: var(--size);
+
+    font-family: "Playfair Display";
+    @include font($size: 24px, $height: 32px, $weight: 700);
+    content: counter(my-awesome-counter);
+    color: #ffffff;
+    background-color: $color-emphasis;
+    text-align: center;
+    border-radius: 6px;
+  }
+  &__text {
+    .text_highlighted {
+      @include font($size: 16px, $height: 24px, $weight: 700);
+    }
+    @include font($size: 16px, $height: 24px, $weight: 400);
+  }
+}
