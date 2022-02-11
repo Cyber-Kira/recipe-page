@@ -1,0 +1,9 @@
+.source {
+  letter-spacing: 0em;
+  padding: 26px 0 25px;
+  color: $color-gray-light;
+  a {
+    color: inherit;
+  }
+  @include font($size: 12px, $height: 18px, $style: italic);
+}
