@@ -1,0 +1,57 @@
+h1 {
+  font-family: "Playfair Display", Verdana, sans-serif;
+  color: $color-add;
+  @include font($size: 1.5rem, $height: 2rem, $weight: 700);
+}
+
+h2 {
+  font-family: "Playfair Display", Helvetica, sans-serif;
+  @include font($size: 1.125rem, $height: 1.5rem, $weight: 700);
+}
+
+p {
+  font-family: Montserrat;
+  letter-spacing: 0em;
+  @include font($size: 0.875rem, $height: 1.25rem, $weight: 400);
+}
+
+.hero__text {
+  @include font(
+    $size: 0.75rem,
+    $height: 0.9375rem,
+    $weight: 500,
+    $style: italic
+  );
+}
+
+.text_highlighted {
+  @include font($size: 0.875rem, $height: inherit, $weight: 700);
+}
+
+.info__servings__title {
+  text-transform: uppercase;
+  color: $color-gray-light;
+  @include font($size: 0.5rem, $height: 0.625rem, $weight: 700);
+}
+
+.info__servings__description,
+.timers__prop_description {
+  @include font($size: 0.625rem, $height: 0.75rem, $weight: 500);
+}
+
+.info__servings__description {
+  color: $color-emphasis;
+}
+
+.dish__title {
+  @include font($size: 1rem, $height: 1.3125rem, $weight: 400, $style: italic);
+}
+
+.dish__ingredient {
+  @include font($size: 0.875rem, $height: 1.5625rem, $weight: 400);
+}
+
+.instruction__text {
+  letter-spacing: 0em;
+  @include font($size: 16px, $height: 24px, $weight: 400);
+}
