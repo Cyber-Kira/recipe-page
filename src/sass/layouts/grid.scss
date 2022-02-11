@@ -1,0 +1,13 @@
+.layout-2-columns {
+  @include media-laptop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    .recipe {
+      width: 60%;
+    }
+    .info {
+      width: 25%;
+    }
+  }
+}

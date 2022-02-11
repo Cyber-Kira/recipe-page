@@ -12,5 +12,7 @@
   &__image {
     border-radius: 12px;
     margin-top: 25px;
+    object-fit: cover;
+    max-height: 470px;
   }
 }

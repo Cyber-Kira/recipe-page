@@ -1,5 +1,8 @@
 .info {
   padding-top: 24px;
+  @include media-laptop {
+    order: 1;
+  }
   &__title {
     text-transform: uppercase;
     color: #bdbdbd;
@@ -32,6 +35,9 @@
     .timer {
       display: flex;
       align-items: center;
+    }
+    @include media-laptop {
+      flex-direction: column;
     }
   }
 }
