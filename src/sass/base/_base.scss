@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  color: $color-prim;
+  background-color: $color-background;
+}
+
 img {
   max-width: 969px;
   width: 100%;
