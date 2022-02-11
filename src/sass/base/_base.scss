@@ -1,3 +1,19 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 969px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
