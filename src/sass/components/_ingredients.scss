@@ -1,0 +1,62 @@
+.ingredients {
+  &__title {
+    padding: 14px 0;
+  }
+}
+
+.dish-item {
+  display: block;
+  position: relative;
+  padding: 9px 0;
+  label {
+    display: flex;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0;
+    }
+    .checkmark {
+      position: relative;
+      flex-shrink: 0;
+      height: 23px;
+      width: 23px;
+      margin-right: 8px;
+      border: 1px solid #828282;
+      border-radius: 4px;
+      overflow: hidden;
+      &::after {
+        content: "";
+        position: absolute;
+        display: none;
+        inset: 8%;
+        background-color: $color-emphasis;
+        border-radius: 3px;
+      }
+    }
+
+    input:checked ~ .checkmark:after {
+      display: block;
+    }
+  }
+
+  &:hover input ~ .checkmark {
+    background-color: $color-background;
+  }
+
+  input:checked ~ .checkmark {
+    background-color: $color-background;
+  }
+}
+
+.dish {
+  padding-bottom: 21px;
+  &__title {
+    font-family: "Playfair Display";
+    @include font($size: 16px, $height: 21px, $style: italic);
+    padding: 0 0 14px;
+  }
+}
