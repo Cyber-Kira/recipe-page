@@ -4,15 +4,7 @@
     order: 1;
   }
   &__title {
-    text-transform: uppercase;
-    color: #bdbdbd;
-    @include font($size: 0.5rem, $height: 0.625rem, $weight: 700);
-  }
-  &__description {
-    @include font($size: 0.625rem, $height: 0.75rem, $weight: 500);
-    &_emphasize {
-      color: $color-emphasis;
-    }
+    color: $color-gray-light;
   }
   &__servings {
     display: flex;
