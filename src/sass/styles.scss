@@ -10,9 +10,16 @@
 //Base
 @import "base/base";
 @import "base/typography";
+@import "base/icons";
 
 // Layouts
 @import "layouts/wrapper";
 @import "layouts/footer";
 
 // Components
+@import "components/hero";
+@import "components/info";
+@import "components/ingredients";
+@import "components/instructions";
+@import "components/source";
+@import "components/footer";
