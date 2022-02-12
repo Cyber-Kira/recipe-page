@@ -56,8 +56,15 @@
 }
 
 .dish {
-  padding-bottom: 27px;
+  padding-bottom: 21px;
   &__title {
-    padding: 0 0 21px;
+    padding: 0 0 13px;
+  }
+  @include media-tablet {
+    padding-bottom: 27px;
+
+    &__title {
+      padding: 0 0 21px;
+    }
   }
 }

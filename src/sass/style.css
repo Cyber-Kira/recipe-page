@@ -777,10 +777,18 @@ p {
 }
 
 .dish {
-  padding-bottom: 27px;
+  padding-bottom: 21px;
 }
 .dish__title {
-  padding: 0 0 21px;
+  padding: 0 0 13px;
+}
+@media (min-width: 768px) {
+  .dish {
+    padding-bottom: 27px;
+  }
+  .dish__title {
+    padding: 0 0 21px;
+  }
 }
 
 .instructions {
