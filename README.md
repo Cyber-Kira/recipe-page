@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://github.com/Cyber-Kira/recipe-page">
+    <a href="https://cyber-kira.github.io/recipe-page/">
       Demo
     </a>
     <span> | </span>
