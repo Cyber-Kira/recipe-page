@@ -15,4 +15,16 @@
     object-fit: cover;
     max-height: 470px;
   }
+
+  @include media-laptop {
+    padding-top: 52px;
+    padding-bottom: 48px;
+    &__content {
+      width: 65%;
+      padding-top: 12px;
+    }
+    &__image {
+      margin-top: 43px;
+    }
+  }
 }

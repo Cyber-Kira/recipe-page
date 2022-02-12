@@ -1,7 +1,12 @@
 .source {
+  width: 70%;
   padding: 26px 0 25px;
   color: $color-gray-light;
   a {
     color: inherit;
+  }
+  @include media-tablet {
+    width: 100%;
+    padding: 57px 0 93px;
   }
 }

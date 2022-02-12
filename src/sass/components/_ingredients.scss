@@ -1,6 +1,9 @@
 .ingredients {
   &__title {
-    padding: 14px 0;
+    padding: 0 0 32px;
+  }
+  .wrapper {
+    padding: 0;
   }
 }
 
@@ -53,10 +56,8 @@
 }
 
 .dish {
-  padding-bottom: 21px;
+  padding-bottom: 27px;
   &__title {
-    font-family: "Playfair Display";
-    @include font($size: 16px, $height: 21px, $style: italic);
-    padding: 0 0 14px;
+    padding: 0 0 21px;
   }
 }

@@ -13,7 +13,7 @@
   counter-increment: my-awesome-counter;
   padding-left: 51px;
   &:not(:last-child) {
-    padding-bottom: 9px;
+    padding-bottom: 20px;
   }
   &::before {
     --size: 36px;
@@ -35,5 +35,8 @@
       @include font($size: 16px, $height: 24px, $weight: 700);
     }
     @include font($size: 16px, $height: 24px, $weight: 400);
+    @include media-tablet {
+      line-height: 20px;
+    }
   }
 }
