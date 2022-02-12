@@ -606,6 +606,18 @@ p {
   padding: 0 12px;
   margin: auto;
 }
+@media (min-width: 959px) {
+  .wrapper {
+    padding: 0;
+  }
+}
+
+@media (min-width: 959px) {
+  .layout-wrapper {
+    max-width: 959px;
+    margin: auto;
+  }
+}
 
 @media (min-width: 959px) {
   .layout-2-columns {
@@ -654,7 +666,7 @@ p {
 }
 
 .info {
-  padding-top: 24px;
+  padding: 24px 0 14px;
 }
 .info__title {
   color: #bdbdbd;
@@ -725,7 +737,12 @@ p {
 }
 
 .ingredients__title {
-  padding: 0 0 32px;
+  padding: 0 0 13px;
+}
+@media (min-width: 768px) {
+  .ingredients__title {
+    padding: 0 0 32px;
+  }
 }
 .ingredients .wrapper {
   padding: 0;
@@ -777,15 +794,12 @@ p {
 }
 
 .dish {
-  padding-bottom: 21px;
+  padding-bottom: 30px;
 }
 .dish__title {
   padding: 0 0 13px;
 }
 @media (min-width: 768px) {
-  .dish {
-    padding-bottom: 27px;
-  }
   .dish__title {
     padding: 0 0 21px;
   }

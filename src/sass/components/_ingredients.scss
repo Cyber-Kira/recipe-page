@@ -1,6 +1,9 @@
 .ingredients {
   &__title {
-    padding: 0 0 32px;
+    padding: 0 0 13px;
+    @include media-tablet {
+      padding: 0 0 32px;
+    }
   }
   .wrapper {
     padding: 0;
@@ -56,13 +59,11 @@
 }
 
 .dish {
-  padding-bottom: 21px;
+  padding-bottom: 30px;
   &__title {
     padding: 0 0 13px;
   }
   @include media-tablet {
-    padding-bottom: 27px;
-
     &__title {
       padding: 0 0 21px;
     }
